@@ -34,7 +34,7 @@ public class ClienteServiceImpl implements IClienteService{
 	@Transactional(readOnly = true)
 	public Cliente findOne(Long id) {
 		// TODO Auto-generated method stub
-		return clienteDao.findById(id).orElseGet(null);
+		return clienteDao.findById(id).orElse(null);
 	}
 
 	@Override
