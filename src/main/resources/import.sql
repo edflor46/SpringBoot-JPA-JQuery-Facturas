@@ -23,4 +23,33 @@ INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (22, 
 INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (23, 'Cristian', 'Valenzuela', 'test23@test.com', '2021-11-03', '');
 INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (24, 'Joana', 'Ramirez', 'test24@test.com', '2021-11-03', '');
 INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (25, 'Guadalupe', 'Vargas', 'test25@test.com', '2021-11-03', '');
-INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (26, 'Alfonso', 'Rodriguez', 'test26@test.com', '2021-11-03', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (26, 'Alfonso', 'Rodriguez', 'test26@test.com', '2021-11-03', '');/* Populate tabla productos */
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Xiaomi Pocophone F3', 9000, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Play Station 5', 14000, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Apple Iphone 13 Pro', 27000, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Apple Iphone 13 Pro Max', 30000, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Xiaomi Pocophone X3 Pro', 7000, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Play Station 4', 7000, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Pantalla LCD Sony', 9000, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Laptop HP Ryzen 5 16 GB RAM', 34000, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Drone DJI Tello', 19000, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Memoria USB 250 GB', 1000, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Camara Canon', 10000, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Audifonos alambricos JBL', 450, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Audifonos Xiaomi inalambricos', 600, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Mi Band 6 Xiaomi', 1200, NOW());
+
+/* Facturas */
+INSERT INTO facturas (descripcion, observacion, cliente_id, create_at) VALUES ('Factura equipos electronicos', null, 1, NOW());
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES (1, 1, 1);
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES (2, 1, 4);
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES (5, 1, 5);
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES (1, 1, 8);
+
+INSERT INTO facturas (descripcion, observacion, cliente_id, create_at) VALUES ('Factura telefonos', 'Alguna nota importante!', 1, NOW());
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES (3, 2, 2);
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES (3, 2, 2);
+
+
+
+
