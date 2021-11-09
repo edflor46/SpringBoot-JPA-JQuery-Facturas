@@ -40,7 +40,8 @@ public class FacturaController {
 	@GetMapping("/ver/{id}")
 	public String ver(@PathVariable Long id, Model model, RedirectAttributes flash) {
 		
-		Factura factura = clienteService.findFacturaById(id);
+		/* Factura factura = clienteService.findFacturaById(id); */
+		Factura factura = clienteService.fetchFacturaByIdWithClienteWhitItemFacturaWithProducto(id);
 		
 		if (factura == null) {
 			flash.addAttribute("error", "La factura no existe en la base de datos");
