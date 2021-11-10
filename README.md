@@ -1,35 +1,42 @@
-# Spring MVC, Data JPA: Lista de clientes (CRUD)
+# Spring MVC, Data JPA, Hibernate, JPQL,CrudRepository, JQuery: Facturas
 
-Aplicacion web desarrollada en **Spring Boot** que realiza la insercion, actualizacion, lectura y eliminacion de datos.
+Aplicacion web desarrollada en **Spring Boot** que realiza la creacion de facturas, calculo de productos agregados, detalle de las facturas realizadas.
 
 ### Descripcion: 
-
 - Notacion @Entity
 - Notacion @Repository
+- Spring MVC
 - H2 console Database
-- Clase DAO
+- Hibernate
+- JPQL
+- Clases DAO
 - Validacion de formulario
 - Manejo de errores
 - Interface CrudRepository
 - Flash Messenger
-- Paginanacion - PagingAndSortingRepository
-- Bootstrap 4
+
 
 ### Capturas:
-#### Listado y paginado
+#### Interfaz principal
 
-![listado](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1635965821/Spring-Boot-JPA-WebApp-1/listado_kclxfb.png)
+![listado](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1636501959/Spring-Boot-Facturas/01_sb2kef.png)
 
-#### Crear
-![crear](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1635965815/Spring-Boot-JPA-WebApp-1/crear_moklqh.png)
+#### Detalle cliente
+![Detalle](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1636501964/Spring-Boot-Facturas/02_detalle_cliente_velhsc.png)
 
-#### Editar
-![editar](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1635965816/Spring-Boot-JPA-WebApp-1/editar_pvrxa2.png)
+#### Crear Factura
+![crear](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1636501975/Spring-Boot-Facturas/03_crear_Factura_uiexam.png)
 
-#### Eliminar
-![eliminar](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1635965821/Spring-Boot-JPA-WebApp-1/eliminar_vfq6zg.png)
+#### Agregar productos a la facura
+![cargar_productos](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1636501986/Spring-Boot-Facturas/04_cargar_productos_d2lfca.png)
 
-#### Validaciones 
-![validaciones](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1635965816/Spring-Boot-JPA-WebApp-1/errores_b6ukbu.png)
+#### Alert de exito 
+![Alert](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1636501964/Spring-Boot-Facturas/05_factura_creada_ekxprh.png)
+
+#### Eliminar factura
+![Eliminar](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1636501960/Spring-Boot-Facturas/06_eliminar_factura_bxb6ni.png)
+
+#### Detalle de la factura
+![Detalle_factura](https://res.cloudinary.com/dvhl6xkqf/image/upload/v1636501961/Spring-Boot-Facturas/07_detalle_factura_lux4fv.png)
 
 
